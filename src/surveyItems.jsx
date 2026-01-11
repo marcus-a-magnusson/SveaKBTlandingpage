@@ -21,13 +21,13 @@ export const surveyQuestions = [
   {
     id: 4,
     text: 'I vilken grad har nedstämdhet eller oro påverkat din vardag?',
-    minLabel: 'Stor påverkan',
-    maxLabel: 'Ingen påverkan',
+    minLabel: 'Ingen påverkan',
+    maxLabel: 'Stor påverkan',
   },
   {
     id: 5,
     text: 'Hur ofta har du känt dig ensam eller isolerad?',
-    minLabel: 'Mycket ofta',
-    maxLabel: 'Aldrig',
+    minLabel: 'Aldrig',
+    maxLabel: 'Mycket Ofta',
   },
 ];

@@ -15,8 +15,8 @@ const SlideFour = () => {
             <div className="text-container">
               <h3>Vill du prata med psykolog?</h3>
               <p>
-                Vår enkäten är baserad på etablerade mått som PHQ-9 och WHO-5.
-                Den ger en överblick över faktorer som kan påverka ens mående.
+                Vår enkät är baserad på de etablerade måtten PHQ-9 och WHO-5.
+                Den ger en överblick över faktorer som kan påverka måendet.
                 Enkäten avser inte att ersätta professionell diagnostik.
               </p>
             </div>

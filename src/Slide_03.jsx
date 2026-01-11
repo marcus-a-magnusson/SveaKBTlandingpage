@@ -106,8 +106,8 @@ const SlideThree = ({ onButtonClick }) => {
 
             <p>
               När måendet påverkas av årstidernas skiftningar kan små,
-              genomtänkta steg vara hjälpsamma. Det här är exempel på sådant som
-              ofta ingår i psykologisk behandling vid säsongsbunden nedstämdhet.
+              genomtänkta steg vara hjälpsamma. Titta på videon – där visar vi
+              vad som kan hjälpa.
             </p>
             <h3>Reflektera</h3>
             <p>
@@ -143,8 +143,8 @@ const SlideThree = ({ onButtonClick }) => {
 
           <p>
             När måendet påverkas av årstidernas skiftningar kan små, genomtänkta
-            steg vara hjälpsamma. Det här är exempel på sådant som ofta ingår i
-            psykologisk behandling vid säsongsbunden nedstämdhet.
+            steg vara hjälpsamma. Titta på videon – där visar vi vad som kan
+            hjälpa.
           </p>
 
           <div className="slide-image-wrapper mobile-img video-mobile">

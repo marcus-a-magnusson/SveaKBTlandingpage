@@ -19,10 +19,9 @@ const SlideTwo = () => {
             />
             <p>
               När ljuset försvinner kan både energi, humör och vardag påverkas.
-              Det kan visa sig som nedstämdhet, svårigheter att ta initiativ,
-              förändrad sömn eller en känsla av att bara ta sig igenom dagarna.
-              Det är inte ett personligt misslyckande, utan en reaktion som
-              många upplever varje år.
+              Det kan ta sig uttryck i form av nedstämdhet, svårigheter att ta
+              initiativ, förändrad sömn eller en känsla av att bara ta sig
+              igenom dagarna. Det är en naturlig reaktion som många känner igen.
             </p>
             <h3>Vanliga tecken</h3>
             <ul>
@@ -102,10 +101,9 @@ const SlideTwo = () => {
 
           <p>
             När ljuset försvinner kan både energi, humör och vardag påverkas.
-            Det kan visa sig som nedstämdhet, svårigheter att ta initiativ,
-            förändrad sömn eller en känsla av att bara ta sig igenom dagarna.
-            Det är inte ett personligt misslyckande, utan en reaktion som många
-            upplever varje år.
+            Det kan ta sig uttryck i form av nedstämdhet, svårigheter att ta
+            initiativ, förändrad sömn eller en känsla av att bara ta sig igenom
+            dagarna. Det är en naturlig reaktion som många känner igen.
           </p>
           <h3>Vanliga tecken</h3>
           <ul>

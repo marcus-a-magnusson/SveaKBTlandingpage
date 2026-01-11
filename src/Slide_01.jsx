@@ -52,10 +52,10 @@ const SlideOne = ({ onButtonClick }) => {
               className2="brush-slide-1"
             />
             <p>
-              Känner du dig tröttare, nedstämd eller mindre motiverad under höst
-              och vinter? Du är inte ensam. Säsongsbunden depression är vanligt,
-              och det finns hjälp. Hos oss får du professionellt och
-              evidensbaserat stöd, anpassat efter dig och ditt tempo.
+              Känner du dig trött, nedstämd eller mindre motiverad under hösten
+              och vintern? Du är inte ensam. Årstidsbunden depression är
+              vanligt, och det finns hjälp att få. Hos oss får du professionellt
+              och evidensbaserat stöd, anpassat efter dig och ditt tempo.
             </p>
             <div className="button-container">
               <Button onClick={onButtonClick}>Sök stöd nu</Button>
@@ -101,9 +101,9 @@ const SlideOne = ({ onButtonClick }) => {
           </div>
 
           <p>
-            Känner du dig tröttare, nedstämd eller mindre motiverad under höst
-            och vinter? Du är inte ensam. Säsongsbunden depression är vanligt,
-            och det finns hjälp. Hos oss får du professionellt och
+            Känner du dig trött, nedstämd eller mindre motiverad under hösten
+            och vintern? Du är inte ensam. Årstidsbunden depression är vanligt,
+            och det finns hjälp att få. Hos oss får du professionellt och
             evidensbaserat stöd, anpassat efter dig och ditt tempo.
           </p>
           <div className="button-container">
