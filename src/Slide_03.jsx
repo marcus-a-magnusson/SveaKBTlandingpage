@@ -48,7 +48,7 @@ const SlideThree = ({ onButtonClick }) => {
               <div className="video-wrapper">
                 <video
                   ref={desktopVideoRef}
-                  src="/public/SveaKBTVideo.mp4"
+                  src="./SveaKBTVideo.mp4"
                   playsInline
                   className="video-content video"
                   onClick={() =>
@@ -151,7 +151,7 @@ const SlideThree = ({ onButtonClick }) => {
             <div className="video-wrapper">
               <video
                 ref={mobileVideoRef}
-                src="/public/SveaKBTVideo.mp4"
+                src="./SveaKBTVideo.mp4"
                 playsInline
                 className="video-content video"
                 onClick={() => toggleVideo(mobileVideoRef, setIsMobilePlaying)}
