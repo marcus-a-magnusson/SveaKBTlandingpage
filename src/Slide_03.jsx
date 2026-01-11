@@ -48,13 +48,21 @@ const SlideThree = ({ onButtonClick }) => {
               <div className="video-wrapper">
                 <video
                   ref={desktopVideoRef}
-                  src="./SveaKBTVideo.mp4"
+                  // Use the Base URL helper to ensure GitHub Pages finds the file
+                  src={`${import.meta.env.BASE_URL}SveaKBTVideo.mp4`}
+                  preload="auto"
                   playsInline
                   className="video-content video"
                   onClick={() =>
                     toggleVideo(desktopVideoRef, setIsDesktopPlaying)
                   }
-                />
+                >
+                  {/* Adding a source tag inside is a fallback for older mobile browsers */}
+                  <source
+                    src={`${import.meta.env.BASE_URL}SveaKBTVideo.mp4`}
+                    type="video/mp4"
+                  />
+                </video>
                 {!isDesktopPlaying && (
                   <div className="play-button-overlay">▶</div>
                 )}
@@ -151,11 +159,17 @@ const SlideThree = ({ onButtonClick }) => {
             <div className="video-wrapper">
               <video
                 ref={mobileVideoRef}
-                src="./SveaKBTVideo.mp4"
+                src={`${import.meta.env.BASE_URL}SveaKBTVideo.mp4`}
+                preload="auto"
                 playsInline
                 className="video-content video"
                 onClick={() => toggleVideo(mobileVideoRef, setIsMobilePlaying)}
-              />
+              >
+                <source
+                  src={`${import.meta.env.BASE_URL}SveaKBTVideo.mp4`}
+                  type="video/mp4"
+                />
+              </video>
               {!isMobilePlaying && <div className="play-button-overlay">▶</div>}
 
               <div
