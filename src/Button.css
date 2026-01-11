@@ -1,0 +1,22 @@
+.custom-button {
+  background-color: #9145B6;       /* Your color */
+  color: white;                    /* Text color */
+  border: none;
+  border-radius: 9999px;           /* Fully circular edges */
+  padding: 1rem 2.5rem;          /* Top/bottom & left/right */
+  font-size: 1.5rem;
+  cursor: pointer;
+  transition: all 0.3s ease;       /* Smooth animation */
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1); /* Soft shadow */
+}
+
+.custom-button:hover {
+  background-color: #A156C8;       /* Slightly lighter/purple */
+  transform: translateY(-2px) scale(1.05); /* subtle lift & scale */
+  box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+}
+
+.custom-button:active {
+  transform: translateY(0) scale(0.98); /* press effect */
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}

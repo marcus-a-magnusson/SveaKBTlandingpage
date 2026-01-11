@@ -1,0 +1,600 @@
+/* Import fonts from Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Libre+Baskerville:wght@400;700&display=swap');
+
+/* 
+
+html, * {
+
+border: 1px solid red;
+
+}
+
+*/
+
+body {
+  font-family: 'Inter', sans-serif;
+  margin: 0;
+}
+
+h1, h2, h3 {
+  font-family: 'Libre Baskerville', serif;
+  font-weight: 200;
+  position: inherit;
+}
+
+h1 {
+
+
+  font-size: 48px;
+}
+
+h2 {
+
+font-size: 36px;
+
+}
+
+h3 {
+
+font-size: 24px;
+
+}
+
+p, li {
+
+font-size: 1.2rem;
+
+}
+
+.slide-image {
+  width: 100%;          
+  height: auto;         
+  display: block;       
+  object-fit: contain;  
+  max-width: 100%;      
+  border-radius: 8px; 
+}
+
+.slide-image-wrapper {
+  width: 100%;
+  max-width: 800px;      /* limits very large screens */
+  margin: 0 auto;        /* center horizontally */
+  padding: 0 1rem;       /* optional horizontal padding */
+  position: relative;
+}
+
+@media (max-width: 1024px) {
+  .slide-image-wrapper {
+    max-width: 600px;
+  }
+}
+
+@media (max-width: 768px) {
+  .slide-image-wrapper {
+    max-width: 100%;
+    padding: 0 0.5rem;
+  }
+}
+
+.grid-content-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 5rem 2rem;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10rem;
+  align-items: center;
+}
+
+.left-content, .right-content, .center-content {
+
+padding-top: 6rem;
+padding-bottom: 6rem;
+
+}
+
+.center-content-container {
+
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+max-width: 800px;  
+margin: 0 auto;
+
+}
+
+.slide {
+
+width: 100%;
+
+}
+
+.slide-01 {
+
+background-color: #F2F0FF;
+
+}
+
+.slide-02 {
+
+background-color: #F6F6F6;
+
+}
+
+.slide-03 {
+
+background-color: #F2E0F4;
+
+
+}
+
+.slide-04 {
+
+  background-color: #F6F6F6;
+
+
+}
+
+.text-container {
+
+padding-bottom: 2rem;
+
+}
+
+main {
+  width: 100%;
+}
+
+@media (max-width: 1024px) {
+  .grid-content-container {
+    grid-template-columns: 1fr;
+    padding: 4rem 1.5rem;
+  }
+
+  .left-content {
+    order: 2;
+  }
+
+  .right-content {
+    order: 1;
+  }
+}
+
+
+
+.right-content {
+  max-width: 520px;
+}
+
+.left-content {
+  min-height: 280px; /* image / illustration placeholder */
+}
+
+.fade-in > * {
+  transition-delay: 0.2s;
+}
+
+.fade-in {
+  opacity: 0;
+  transform: translateY(24px);
+  transition: opacity 1s ease, transform 1s ease;
+}
+
+.fade-in.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.survey {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+    background-color: #fff;
+  border-radius: 2rem;
+  padding: 2rem;
+
+}
+
+.survey-progress {
+  font-size: 0.9rem;
+  opacity: 0.7;
+}
+
+.survey-slider {
+  width: 100%;
+  margin: 2rem 0;
+}
+
+.slider-labels {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.85rem;
+  opacity: 0.7;
+}
+
+.scale-indicator {
+
+display: flex;
+justify-content: space-around;
+align-items: center;
+
+}
+
+input[type="range"] {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 100%;
+  background: transparent;
+  height: 24px; /* gives room for thumb */
+}
+
+/* ===== TRACK ===== */
+
+/* Chrome / Safari / Edge */
+input[type="range"]::-webkit-slider-runnable-track {
+  height: 6px;
+  border-radius: 999px;
+  background: linear-gradient(
+    to right,
+    #9145B6 0%,
+    #9145B6 var(--percent),
+    #e0e0e0 var(--percent),
+    #e0e0e0 100%
+  );
+}
+
+/* Firefox */
+input[type="range"]::-moz-range-track {
+  height: 6px;
+  border-radius: 999px;
+  background: #e0e0e0;
+}
+
+input[type="range"]::-moz-range-progress {
+  height: 6px;
+  border-radius: 999px;
+  background: #9145B6;
+}
+
+/* ===== THUMB ===== */
+
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width: 18px;
+  height: 18px;
+  background: #9145B6;
+  border-radius: 50%;
+  margin-top: -6px; /* centers thumb */
+  cursor: pointer;
+  border: none;
+}
+
+input[type="range"]::-moz-range-thumb {
+  width: 18px;
+  height: 18px;
+  background: #9145B6;
+  border-radius: 50%;
+  border: none;
+  cursor: pointer;
+}
+
+.scale-value {
+
+font-size: 1.5rem;
+color: #9145B6;
+font-weight: 600;
+}
+
+.survey-result {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 2rem;
+  background-color: #fff;
+  border-radius: 2rem;
+
+}
+
+.survey-progress-container {
+
+display: flex;
+justify-content: space-between;
+align-items: center;
+
+}
+
+.back-arrow {
+  font-size: 1.25rem;
+  cursor: pointer;
+  opacity: 0.7;
+  transition: opacity 0.2s ease, transform 0.2s ease;
+  color: #9145B6;
+}
+
+.back-arrow:hover {
+  opacity: 1;
+  transform: translateX(-3px);
+}
+
+.source-dropdown {
+  max-width: 800px;
+  margin: 3rem auto 0;
+  text-align: left;
+}
+
+.source-toggle {
+  width: 100%;
+  background: none;
+  border: none;
+  padding: 0.75rem 0.5rem;
+  font-size: 0.95rem;
+  font-weight: 500;
+  cursor: pointer;
+
+  display: flex;
+  align-items: center;
+}
+
+.source-toggle svg {
+  transition: transform 0.25s ease;
+}
+
+.source-toggle svg.rotate {
+  transform: rotate(180deg);
+}
+
+.source-list {
+  margin-top: 0.75rem;
+  padding-left: 1rem;
+  font-size: 0.85rem;
+}
+
+.source-list li {
+  margin-bottom: 0.5rem;
+}
+
+.source-list a {
+  color: inherit;
+  text-decoration: underline;
+  opacity: 0.8;
+}
+
+.source-list a:hover {
+  opacity: 1;
+}
+
+.source-button {
+
+padding-right: 0.5rem;
+
+}
+
+.button-container {
+
+padding-top: 2rem;
+
+}
+
+.mobile-show {
+
+display: none;
+
+}
+
+/* MOBILE AND IPAD RESPONSIVENESS */
+@media (max-width: 1024px) {
+  .grid-content-container, .center-content-container {
+    padding: 0;
+  }
+
+  h1 {
+    font-size: 2.6rem;
+    text-align: center;
+  }
+
+  h2 {
+
+    font-size: 1.5rem;
+    text-align: center;
+
+  }
+
+  .button-container {
+
+    display: flex;
+    width: 100%;
+    justify-content: center;
+
+  }
+
+  .survey {
+
+    padding: 1rem;
+
+  }
+
+  .right-content, .left-content {
+
+display: none;
+
+  }
+
+  .mobile-show {
+
+    display: block;
+    padding: 1rem;
+    padding-bottom: 2rem;
+
+  }
+
+
+
+.mobile-img {
+
+padding-top: 2rem;
+padding-bottom: 2rem;
+scale: 0.9;
+
+}
+
+.center-content {
+
+padding: 2rem 1rem 2rem 1rem;
+}
+
+}
+
+.svg-draw-container svg {
+  overflow: visible; /* Prevents paths from getting clipped during drawing */
+}
+
+/* Optional: Fallback for if JS fails */
+.svg-draw-container path {
+  stroke-linecap: round;
+  stroke-linejoin: round;
+} 
+.svg-top {
+
+position: absolute;
+left: 0;
+top: 50%;
+transform: translate(0,-50%);
+
+}
+
+.svg-1 {
+
+scale: 0.9;
+
+}
+
+.svg-fast-draw {
+
+transition: stroke-dashoffset 3s ease-out, opacity 0.3s ease-in;
+
+}
+.video-wrapper {
+  position: relative;
+  width: 100%;
+  max-width: 320px;          /* adjust to taste */
+  aspect-ratio: 9 / 16;
+  overflow: hidden;
+  border-radius: 1rem;
+
+
+}
+
+.slide-video {
+
+  position: relative;
+  width: 100%;
+  max-width: 420px;   /* whatever your SVG uses */
+  aspect-ratio: 566 / 757;  /* your blob background ratio */
+    display: grid;
+  place-items: center;
+  overflow: hidden;
+
+}
+.slide-image-wrapper video {
+  position: absolute;
+  inset: -5%;
+  width: 110%;
+  height: 110%;
+  object-fit: cover;     /* this removes black bars */
+  z-index: 2;
+}
+
+.slide-3-svg {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+
+.play-button-overlay {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 4rem;
+  color: white;
+  pointer-events: none;
+  z-index: 3;
+}
+
+
+
+.video-mobile {
+
+display: flex;
+justify-content: center;
+
+}
+
+.volume-control {
+  position: absolute;
+  bottom: 12px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  z-index: 4;
+  pointer-events: auto; /* slider works */
+}
+
+.volume-icon {
+  color: white;
+  font-size: 1.2rem;
+  pointer-events: none; /* so icon does not block slider */
+}
+
+.volume-slider {
+  width: 100px; 
+}
+
+/* BRUSHSTROKE LOGIC */
+
+.title-container {
+  position: relative;
+  display: inline-block; /* Helps contain the strokes to the text size */
+}
+
+.brushstroke {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  pointer-events: none;
+  z-index: 0;
+  
+  /* Initial state: hidden */
+  opacity: 0;
+  transition: clip-path 1.2s ease-in-out, opacity 0.1s;
+}
+
+/* Stroke 1: Reveal Left to Right */
+.stroke-1 {
+  clip-path: inset(0 100% 0 0); /* 100% inward from the right (hidden) */
+}
+
+/* Stroke 2: Reveal Right to Left */
+.stroke-2 {
+  clip-path: inset(0 0 0 100%); /* 100% inward from the left (hidden) */
+}
+
+/* Active Animation States */
+.brushstroke.animate {
+  opacity: 1;
+  clip-path: inset(0 0 0 0); /* Reveal all sides */
+}
+
+/* Optional: Add a slight delay to the second stroke for a natural look */
+.stroke-2.animate {
+  transition-delay: 0.4s;
+}
